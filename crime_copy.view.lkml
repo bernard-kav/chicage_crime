@@ -76,15 +76,22 @@ view: crime_copy {
     sql: ${TABLE}.location ;;
   }
 
+  dimension: longitude {
+    type: number
+    sql: ${TABLE}.longitude ;;
+  }
+
+  dimension: geolocation {
+    type: location
+    sql_latitude: ${latitude} ;;
+    sql_longitude: ${longitude} ;;
+  }
+
   dimension: location_description {
     type: string
     sql: ${TABLE}.location_description ;;
   }
 
-  dimension: longitude {
-    type: number
-    sql: ${TABLE}.longitude ;;
-  }
 
   dimension: primary_type {
     type: string
