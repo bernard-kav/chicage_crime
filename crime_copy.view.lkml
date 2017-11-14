@@ -18,6 +18,7 @@ view: crime_copy {
   }
 
   dimension: case_number {
+    primary_key: yes
     type: string
     sql: ${TABLE}.case_number ;;
   }
@@ -49,6 +50,7 @@ view: crime_copy {
   dimension: district {
     type: number
     sql: ${TABLE}.district ;;
+    map_layer_name: us_zipcode_tabulation_areas
   }
 
   dimension: domestic {

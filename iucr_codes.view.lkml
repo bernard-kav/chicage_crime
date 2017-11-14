@@ -3,6 +3,7 @@ view: iucr_codes {
     ;;
 
   dimension: string_field_0 {
+    primary_key: yes
     type: string
     label: "IUCR"
     sql: ${TABLE}.string_field_0 ;;
