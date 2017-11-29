@@ -18,4 +18,4 @@ explore: iucr_codes {}
 
 explore: zipcodes {}
 
-explore: population_by_zip_2010 {}
+explore: us_zipcodes {}
